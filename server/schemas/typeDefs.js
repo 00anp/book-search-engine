@@ -1,6 +1,5 @@
 const { gql } = require('apollo-server-express');
 
-// typeDefs
 const typeDefs = gql`
     type User {
         _id: ID
@@ -17,7 +16,6 @@ const typeDefs = gql`
     
     type Query {
         me: User
-        # Because we have the context functionality in place to check a JWT and decode its data, we can use a query that will always find and return the logged in user's data
     }
 
     type Book {
@@ -46,5 +44,4 @@ const typeDefs = gql`
 }
 `;
 
-// export the typeDefs
 module.exports = typeDefs;
