@@ -9,11 +9,12 @@ const { ApolloServer } = require('apollo-server-express');
 // Import the two parts of a GraphQL schema
 const { typeDefs, resolvers } = require('./schemas');
 
+// Update the auth middleware to work with GraphQL API
+const {authMiddleware} = require('./utils/auth');
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Update the auth middleware to work with GraphQL API
-const {authMiddleware} = require('./utils/auth');
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const server = new ApolloServer({

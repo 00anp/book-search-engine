@@ -1,5 +1,6 @@
 import { gql } from '@apollo/client';
 
+//Export the necessary mutations for the GraphQL API
 export const LOGIN_USER = gql`
   mutation login($email: String!, $password: String!) {
     login(email: $email, password: $password) {

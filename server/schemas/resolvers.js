@@ -2,6 +2,7 @@ const { AuthenticationError } = require('apollo-server-express');
 const { User, Book } = require('../models');
 const { signToken } = require('../utils/auth');
 
+//Define the query and mutation functionality to work with the Mongoose models
 const resolvers = {
     Query: {
         // By adding context to our query, we can retrieve the logged in user without specifically searching for them
