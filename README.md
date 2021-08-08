@@ -17,7 +17,7 @@
 ## Description
 This MERN application helps the user to look for books and save them into an account in a DB.
 
-![Screenshot](./public/img/booksearchengine.png?raw=true)
+![Screenshot](./client/public/img/booksearchengine.png?raw=true)
 ## Installation
 Install the node modules, and run the application.
 ## Usage
